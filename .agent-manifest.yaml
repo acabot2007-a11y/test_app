@@ -1,0 +1,11 @@
+version: "1.0"
+project:
+  name: "github-target-app"
+  language: "python"
+  framework: "pytest"
+  runtime_image: "python:3.11-slim"
+
+lifecycle:
+  install: "pip install -r requirements.txt"
+  test: "pytest"
+  entrypoint: "app.py"
